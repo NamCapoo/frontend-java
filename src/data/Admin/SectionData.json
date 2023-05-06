@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Bảng điều khiển",
+    "url": "",
+    "iconClass": "fas fa-chart-pie-alt"
+  },
+  {
+    "name": "Quản lý khách hàng",
+    "url": "users",
+    "iconClass": "fas fa-user"
+  },
+  {
+    "name": "Quản lý sản phẩm",
+    "url": "products",
+    "iconClass": "fas fa-shopping-bag"
+  },
+  {
+    "name": "Quản lý đơn hàng",
+    "url": "orders",
+    "iconClass": "fas fa-shopping-cart"
+  }
+]

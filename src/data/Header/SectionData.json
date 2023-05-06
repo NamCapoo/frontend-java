@@ -1,0 +1,36 @@
+[
+  {
+    "show": "Trang chủ",
+    "name": "Home",
+    "haveMenu": true,
+    "menu": {
+      "name": "Home",
+      "items": [
+        {
+          "name": "Home 1 - Watch",
+          "url": "/shop"
+        }
+      ]
+    }
+  },
+  {
+    "show": "Sản phẩm",
+    "name": "Shop",
+    "haveMenu": true
+  },
+  {
+    "show": "Về chúng tôi",
+    "name": "About",
+    "haveMenu": false
+  },
+  {
+    "show": "Liên hệ",
+    "name": "Contact",
+    "haveMenu": false
+  },
+  {
+    "show": "Admin",
+    "name": "Admin",
+    "haveMenu": false
+  }
+]

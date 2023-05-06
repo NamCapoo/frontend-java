@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="font-awesome-pro-5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/font-awesome-pro-5/font-awesome-pro-5.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

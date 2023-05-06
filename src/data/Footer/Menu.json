@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Về chúng tôi",
+    "menu": [
+      {
+        "name": "Về chúng tôi",
+        "link": "about"
+      },
+      {
+        "name": "Liên hệ",
+        "link": "contact"
+      },
+      {
+        "name": "Hóa đơn",
+        "link": "orders"
+      }
+    ]
+  },
+  {
+    "name": "Shop",
+    "menu": [
+      {
+        "name": "Trang chủ",
+        "link": ""
+      },
+      {
+        "name": "Shop",
+        "link": "shop"
+      },
+      {
+        "name": "Giỏ hàng",
+        "link": "cart"
+      },
+      {
+        "name": "Thanh toán",
+        "link": "checkout"
+      }
+    ]
+  },
+  {
+    "name": "Tài khoản của tôi",
+    "menu": [
+      {
+        "name": "Tài khoản của tôi",
+        "link": "account-info"
+      },
+      {
+        "name": "Yêu thích",
+        "link": "favourite"
+      }
+    ]
+  }
+]

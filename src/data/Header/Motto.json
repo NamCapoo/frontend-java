@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Free Shipping",
+    "description": "Miễn phí ship cho hóa đơn",
+    "image": "../../assets/images/motto/shipping.webp"
+  },
+  {
+    "name": "Support 24/7",
+    "description": "Hỗ trợ tận tình 24/7",
+    "image": "../../assets/images/motto/support.webp"
+  },
+  {
+    "name": "Money Back",
+    "description": "30 ngày hoàn tiền",
+    "image": "../../assets/images/motto/money.webp"
+  },
+  {
+    "name": "Order discount",
+    "description": "Nhiều mã giảm giá",
+    "image": "../../assets/images/motto/discount.webp"
+  }
+]
