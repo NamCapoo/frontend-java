@@ -42,7 +42,7 @@ const Favourite = () => {
             <Link to={"/"}>
               <Button name={"TIẾP TỤC MUA SẮM"} />
             </Link>
-            <Button name={"XÓA YÊU THÍCH"} />
+            {/* <Button name={"XÓA YÊU THÍCH"} /> */}
           </div>
         </>
       )}

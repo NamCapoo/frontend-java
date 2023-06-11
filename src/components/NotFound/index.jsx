@@ -4,9 +4,22 @@ import NotFoundImage from "../../assets/images/404-pages.jpg";
 
 const NotFound = () => {
   return (
-    <div className="grid place-items-center">
-      <h1 className="text-xl mb-5"></h1>
-      <form action="/contact" method="post">
+    // <div className="grid place-items-center">
+    <div className="w-full pt-32 flex flex-col items-center">
+      <div className="text-center grid place-items-center">
+        <div className="text-lg">
+          <h1 className="text-3xl font-semibold text-gray-800">
+                  Email: cskh@watchshop.com
+          </h1>
+          <span className="w-50 h-1 bg-black block my-3"></span>
+          <h1 className="text-3xl font-semibold text-gray-800">
+                  SDT: 0123456789
+          </h1>
+        </div>
+      </div> 
+      
+
+      {/* <form action="/contact" method="post">
         
         <div className="form-group">
           <label htmlFor="name">Name</label>
@@ -38,7 +51,8 @@ const NotFound = () => {
           ></textarea>
         </div>
         <button type="submit" className="btn btn-primary">Submit</button>
-      </form>
+      </form> */}
+      <span className="w-50 h-1 bg-black block my-3"></span>
       <Link to={"/"}>
         <button className="text-white bg-purple-500 px-5 py-3 rounded-full">
           Trở về trang chủ

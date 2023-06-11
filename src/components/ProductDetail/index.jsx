@@ -111,7 +111,7 @@ const ProductDetail = () => {
               </div>
               <div className="pt-5 flex flex-col gap-10">
                 <div className="flex flex-row gap-10">
-                  <div className="font-semibold text-lg mb-3">
+                  {/* <div className="font-semibold text-lg mb-3">
                     <span>Type</span>
                     <div className="mt-7 flex flex-row gap-3">
                       {product.phanLoai.mauSac.map((item, index) => (
@@ -121,8 +121,8 @@ const ProductDetail = () => {
                         ></span>
                       ))}
                     </div>
-                  </div>
-                  <div className="font-semibold text-lg">
+                  </div> */}
+                  {/* <div className="font-semibold text-lg">
                     <span>Size</span>
                     <div className="flex flex-row gap-3 mt-4">
                       {product.phanLoai.kichCo.map((item, index) => (
@@ -131,7 +131,7 @@ const ProductDetail = () => {
                         </span>
                       ))}
                     </div>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div class="custom-number-input h-10 flex flex-row gap-7 items-center">
