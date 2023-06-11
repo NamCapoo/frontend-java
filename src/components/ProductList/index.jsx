@@ -14,7 +14,7 @@ const Index = () => {
   const [filterProducts, setFilterProducts] = useState([]);
 
   const [filter, setFilter] = useState({
-    gia: [0, 10000000],
+    gia: [0, 100000000],
     colors: [],
     sort: "",
     name: "",

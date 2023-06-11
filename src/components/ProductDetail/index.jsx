@@ -112,7 +112,7 @@ const ProductDetail = () => {
               <div className="pt-5 flex flex-col gap-10">
                 <div className="flex flex-row gap-10">
                   <div className="font-semibold text-lg mb-3">
-                    <span>Color</span>
+                    <span>Type</span>
                     <div className="mt-7 flex flex-row gap-3">
                       {product.phanLoai.mauSac.map((item, index) => (
                         <span
