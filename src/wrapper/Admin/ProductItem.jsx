@@ -27,7 +27,7 @@ const ProductItem = ({ product }) => {
       </Link>
       <div className="flex flex-row justify-between items-center px-5">
         <div className="flex flex-row gap-2">
-          <span className="block w-5 h-5 rounded-full bg-black"></span>
+          {/* <span className="block w-5 h-5 rounded-full bg-black"></span> */}
         </div>
         <h6 className="font-semibold text-lg">
           {numberWithDots(product.gia)} đ
