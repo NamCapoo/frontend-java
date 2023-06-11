@@ -31,6 +31,7 @@ const Products = () => {
     hinhAnh: "",
     sao: 5,
     status: 1,
+    sL:1,
   });
   const [index, setIndex] = useState(1);
   const handleFilterValue = (e) => {
@@ -85,6 +86,7 @@ const Products = () => {
             hinhAnh: "",
             sao: 5,
             status: 1,
+            sL:1,
           });
         });
       }
@@ -194,6 +196,16 @@ const Products = () => {
                   name="moTa"
                   onChange={handleChange}
                   value={itemProduct.moTa}
+                  required
+                />
+                <TextField
+                  id="standard-basic"
+                  label="Số lượng"
+                  variant="standard"
+                  className="w-full"
+                  name="sL"
+                  onChange={handleChange}
+                  value={itemProduct.sL}
                   required
                 />
               </div>
