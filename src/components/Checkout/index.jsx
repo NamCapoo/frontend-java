@@ -171,11 +171,11 @@ const Checkout = () => {
                 </div>
                 <div className="flex justify-between pt-5 flex-col gap-3">
                   <h2>Hình thức thanh toán</h2>
-                  <div class="flex">
+                  <div className="flex">
                     <div className="flex gap-2 flex-col">
-                      <div class="form-check">
+                      <div className="form-check">
                         <input
-                          class="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                          className="form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                           type="radio"
                           name="flexRadioDefault"
                           id="flexRadioDefault1"

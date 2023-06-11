@@ -5,6 +5,7 @@ import emailjs from "emailjs-com";
 
 const SendMailSuccess = () => {
   const password = useSelector((state) => state.password);
+  console.log(password.user.email);
   function hideEmail(target) {
     let i;
     var email = target; //anas.behhari@gmail.com
@@ -21,8 +22,8 @@ const SendMailSuccess = () => {
   useEffect(() => {
     if (password.user) {
       emailjs.send(
-        "service_bizxgnf",
-        "template_xmlvu2c",
+        "service_dvgaapn",
+        "template_i76l51a",
         {
           name: password.user.ho_ten,
           link: `${window.location.origin}/reset-password/${password.user.maKh}`,
@@ -30,7 +31,7 @@ const SendMailSuccess = () => {
           reply_to: password.user.email,
           to_email: password.user.email,
         },
-        "q9E_OWHY7-fqsGjoW"
+        "jKCKFJU-8KPe9cWWy"
       );
     }
   }, [password.user]);
@@ -50,10 +51,10 @@ const SendMailSuccess = () => {
             class="tick"
             fill="none"
             stroke="#FFF"
-            stroke-width="6"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-miterlimit="10"
+            strokeWidth="6"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeMiterlimit="10"
             d="M14 27l5.917 4.917L34 17"
           />
         </svg>

@@ -40,7 +40,7 @@ const ProductComponent = ({ product }) => {
         <img
           src={handleImageUrl(product.hinhAnh)}
           alt="Product"
-          className="w-full h-[350px]"
+          className="w-[350px] h-[280px]"
         />
         <span
           className={`absolute top-2 p-1 ${

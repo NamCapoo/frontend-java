@@ -12,7 +12,6 @@ const AboutUs = () => {
       <div className="w-4/5">
         <div className="text-center grid place-items-center">
           <div className="text-lg">
-            {/* <p className="text-gray-500 font-semibold">Who Are We</p> */}
             <h1 className="text-3xl font-semibold text-gray-800">
               Chào mừng đến với website của chúng tôi
             </h1>
@@ -65,14 +64,14 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="grid grid-cols-4 gap-10 mt-10">
-          <Member name={"Phạm Quốc Ấn"} role={"Nhóm trưởng"} />
-          <Member name={"Trần Đức Bảo"} role={"Thành viên"} />
-          <Member name={"Nghiêm Chí Bảo"} role={"Thành viên"} />
-          <Member name={"Danh Đặng Hải Đăng"} role={"Thành viên"} />
+          <Member name={"Đinh Phương Nam"} role={"Nhóm trưởng"} />
+          <Member name={"Nguyễn Trung Nhân"} role={"Thành viên"} />
+          <Member name={"Huỳnh Thái Dương"} role={"Thành viên"} />
+          <Member name={"Trương Quốc Thiện"} role={"Thành viên"} />
         </div>
       </div>
     </div>
-  );
+  )
 };
 
 export default AboutUs;

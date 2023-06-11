@@ -19,7 +19,7 @@ const Index = () => {
     sort: "",
     name: "",
   });
-
+  console.log(filter.colors);
   const [index, setIndex] = useState(1);
   useEffect(() => {
     setFilterProducts(products.products);
@@ -134,7 +134,6 @@ const Index = () => {
                 </div>
               </div>
               <FilterCheckbox filter={filter} setFilter={setFilter} />
-              {/* <FilterCheckbox /> */}
               <button
                 className="bg-purple-500 text-white py-2 rounded-full hover:bg-purple-600"
                 onClick={handleFilter}
@@ -144,24 +143,24 @@ const Index = () => {
             </div>
             <div className="basis-3/4">
               <div>
-                <div class="flex flex-row justify-between items-center">
-                  <div class="mb-3 xl:w-96 flex flex-row justify-between ">
+                <div className="flex flex-row justify-between items-center">
+                  <div className="mb-3 xl:w-96 flex flex-row justify-between ">
                     <select
-                      class="form-select appearance-none
-      block
-      px-4
-      py-1.5
-      w-[200px]
-      text-base
-      font-semibold
-      text-gray-700
-      bg-white bg-clip-padding bg-no-repeat
-      border border-solid border-gray-300
-      rounded
-      transition
-      ease-in-out
-      m-0
-      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                      className="form-select appearance-none
+                                block
+                                px-4
+                                py-1.5
+                                w-[200px]
+                                text-base
+                                font-semibold
+                                text-gray-700
+                                bg-white bg-clip-padding bg-no-repeat
+                                border border-solid border-gray-300
+                                rounded
+                                transition
+                                ease-in-out
+                                m-0
+                                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                       aria-label="Default select example"
                       onChange={(e) =>
                         setFilter({ ...filter, sort: e.target.value })
