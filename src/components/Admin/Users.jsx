@@ -47,26 +47,30 @@ const Users = () => {
   };
   const handleDeleteUser = async () => {
     if (window.confirm("Bạn có chắc chắn muốn xóa người dùng này?")) {
-      const userId = selectedUsers[0].id; // Assuming only one user can be selected at a time
+      const userIds = selectedUsers;
+      console.log(userIds);
       try {
-        const response = await axios.delete(`${API_URL}/api/v1/khach-hang/${userId}`);
-        console.log("User deleted successfully:", response.data);
-        // Perform any additional actions after deleting the user
-      } catch (error) {
-        console.error("Error deleting user:", error);
+        const response = await axios.delete(`${API_URL}/api/v1/khach-hang/${userIds}`, {
+          data: { userIds },
+        });
+        const newRows = rows.filter((user) => !selectedUsers.includes(user.id));
+        setUserFilter(newRows);
+        setSelectedUsers([]);
+        console.log("Users deleted successfully:", response.data);
+      }
+      catch (error) {
+        console.error("Error deleting users:", error);
         // Handle error response from server
       }
-      // delete from the rows so that it can be reflected in the UI
-      const newRows = rows.filter((user) => user.id !== userId);
-      setUserFilter(newRows);
-      
     }
   };
   const [selectedUsers, setSelectedUsers] = useState([]);
 
   const handleSelectionChange = (selection) => {
-    setSelectedUsers(rows.filter((user) => user.id === selection[0]));
+    const selectedUserIds = selection.map((selectedRow) =>selectedRow);
+    setSelectedUsers(selectedUserIds);
   };
+  console.log(selectedUsers);
   return (
     <div className="basis-3/4">
       <h1 className="mb-5 text-2xl font-semibold">Người dùng</h1>
