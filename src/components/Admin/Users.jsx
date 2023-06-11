@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import { useSelector } from "react-redux";
 import Skeleton from "react-loading-skeleton";
-
+import axios from "axios";
+import { API_URL } from "../../constants";
 const columns = [
   { field: "id", headerName: "Mã ID", width: 70 },
   { field: "name", headerName: "Họ tên", width: 200 },
@@ -44,7 +45,28 @@ const Users = () => {
     });
     setUserFilter(filter);
   };
+  const handleDeleteUser = async () => {
+    if (window.confirm("Bạn có chắc chắn muốn xóa người dùng này?")) {
+      const userId = selectedUsers[0].id; // Assuming only one user can be selected at a time
+      try {
+        const response = await axios.delete(`${API_URL}/api/v1/khach-hang/${userId}`);
+        console.log("User deleted successfully:", response.data);
+        // Perform any additional actions after deleting the user
+      } catch (error) {
+        console.error("Error deleting user:", error);
+        // Handle error response from server
+      }
+      // delete from the rows so that it can be reflected in the UI
+      const newRows = rows.filter((user) => user.id !== userId);
+      setUserFilter(newRows);
+      
+    }
+  };
+  const [selectedUsers, setSelectedUsers] = useState([]);
 
+  const handleSelectionChange = (selection) => {
+    setSelectedUsers(rows.filter((user) => user.id === selection[0]));
+  };
   return (
     <div className="basis-3/4">
       <h1 className="mb-5 text-2xl font-semibold">Người dùng</h1>
@@ -57,7 +79,7 @@ const Users = () => {
           value={query}
           onChange={handleFilterValue}
         />
-        <i class="fas fa-trash-alt text-xl"></i>
+        <button onClick={handleDeleteUser}><i className="fas fa-trash-alt text-xl"></i></button>
       </div>
       <div className="h-[400px] w-full bg-white">
         {admin.loadingUser ? (
@@ -69,6 +91,8 @@ const Users = () => {
             pageSize={5}
             rowsPerPageOptions={[5]}
             checkboxSelection
+            // get the selected rows
+            onSelectionModelChange={handleSelectionChange}
           />
         )}
       </div>

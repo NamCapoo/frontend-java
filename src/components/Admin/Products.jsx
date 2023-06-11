@@ -211,7 +211,7 @@ const Products = () => {
                   onClick={handleAddProduct}
                 >
                   {loading ? (
-                    <i class="fad fa-spinner-third fa-spin"></i>
+                    <i className="fad fa-spinner-third fa-spin"></i>
                   ) : (
                     "Thêm sản phẩm"
                   )}
