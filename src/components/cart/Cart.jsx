@@ -24,16 +24,16 @@ const Cart = () => {
           <h3>Sản phẩm</h3>
         </div>
         {user.loading ? (
-          <div class="flex flex-col w-4/5">
+          <div className="flex flex-col w-4/5">
             <Skeleton height={"200px"} />
           </div>
         ) : (
           <>
-            <div class="flex flex-col w-4/5">
-              <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
-                <div class="py-4 inline-block min-w-full sm:px-6 lg:px-8">
-                  <div class="overflow-hidden">
-                    <table class="min-w-full text-center">
+            <div className="flex flex-col w-4/5">
+              <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                <div className="py-4 inline-block min-w-full sm:px-6 lg:px-8">
+                  <div className="overflow-hidden">
+                    <table className="min-w-full text-center">
                       <CartHeaderComponent isCart={true} />
                       <tbody>
                         {cart.chiTietGioHang.map((product, i) => (

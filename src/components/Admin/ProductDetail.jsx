@@ -37,10 +37,10 @@ const ProductDetail = () => {
   let star = [];
   const calculateStar = (sao) => {
     for (let index = 0; index < Math.ceil(sao); index++) {
-      star.push(<i class="fal fa-star text-yellow-500"></i>);
+      star.push(<i className="fal fa-star text-yellow-500"></i>);
     }
     for (let index = 0; index < 5 - Math.ceil(sao); index++) {
-      star.push(<i class="fal fa-star"></i>);
+      star.push(<i className="fal fa-star"></i>);
     }
   };
 
